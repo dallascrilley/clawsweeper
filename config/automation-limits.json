@@ -1,13 +1,13 @@
 {
   "workers": {
-    "max": 57,
-    "reserve_for_interactive": 10,
-    "expansion_reserve": 20,
-    "minimum_background": 10
+    "max": 6,
+    "reserve_for_interactive": 2,
+    "expansion_reserve": 1,
+    "minimum_background": 2
   },
   "lanes": {
     "assist": {
-      "max": 5
+      "max": 2
     },
     "repair": {
       "cluster_max_live_runs": 1
