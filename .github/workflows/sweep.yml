@@ -981,7 +981,10 @@ jobs:
           repositories: ${{ needs.plan.outputs.target_repo_name }}
           permission-contents: read
           permission-issues: write
-          permission-pull-requests: read
+          # PRs are issues, but commenting on a PR is gated by pull_requests
+          # (not issues) write — without this, the review's start-comment POST
+          # 403s and the item is mislabeled "Codex failed".
+          permission-pull-requests: write
 
       - name: Create target Codex inspection token
         id: codex-inspection-token
