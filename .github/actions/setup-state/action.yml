@@ -7,7 +7,7 @@ inputs:
   state-repository:
     description: Generated state repository.
     required: false
-    default: dallascrilley/clawsweeper-state
+    default: dallascrilleymartech/clawsweeper-state
   state-ref:
     description: Generated state branch.
     required: false

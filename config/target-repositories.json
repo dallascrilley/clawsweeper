@@ -3,23 +3,10 @@
   "repositories": [],
   "generic_fallbacks": [
     {
-      "owner": "dallascrilley",
-      "deny_repositories": ["dallascrilley/clawsweeper-state", "dallascrilley/.github"],
-      "allow_repo_name_pattern": "^[A-Za-z0-9_.-]+$",
-      "prompt_note": "Use the {target_repo} source tree and current default branch. This repository uses the generic personal-repository onboarding profile: review conservatively and do not auto-close issues or pull requests unless a repository-specific profile later enables that policy.",
-      "apply_close_rules": {
-        "issue": [],
-        "pull_request": []
-      },
-      "package_manager": "pnpm",
-      "validation_commands": [],
-      "changed_gate": null
-    },
-    {
       "owner": "dallascrilleymartech",
-      "deny_repositories": ["dallascrilleymartech/.github"],
+      "deny_repositories": ["dallascrilleymartech/clawsweeper", "dallascrilleymartech/clawsweeper-state", "dallascrilleymartech/.github"],
       "allow_repo_name_pattern": "^[A-Za-z0-9_.-]+$",
-      "prompt_note": "Use the {target_repo} source tree and current default branch. This repository uses the generic personal-repository onboarding profile: review conservatively and do not auto-close issues or pull requests unless a repository-specific profile later enables that policy.",
+      "prompt_note": "Use the {target_repo} source tree and current default branch. This repository uses the generic organization onboarding profile: review conservatively and do not auto-close issues or pull requests unless a repository-specific profile later enables that policy.",
       "apply_close_rules": {
         "issue": [],
         "pull_request": []
@@ -31,9 +18,9 @@
   ],
   "core_target_overrides": {},
   "target_inventory": {
-    "owners": ["dallascrilley", "dallascrilleymartech"],
-    "deny_repositories": ["dallascrilley/clawsweeper-state", "dallascrilley/.github", "dallascrilleymartech/.github"],
-    "include_private": false,
+    "owners": ["dallascrilleymartech"],
+    "deny_repositories": ["dallascrilleymartech/clawsweeper", "dallascrilleymartech/clawsweeper-state", "dallascrilleymartech/.github"],
+    "include_private": true,
     "include_archived": false,
     "include_forks": false,
     "require_issues": true

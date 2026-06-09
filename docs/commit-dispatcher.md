@@ -45,7 +45,7 @@ jobs:
     if: ${{ vars.CLAWSWEEPER_COMMIT_REVIEW_ENABLED != 'false' }}
     env:
       HAS_CLAWSWEEPER_APP_PRIVATE_KEY: ${{ secrets.CLAWSWEEPER_APP_PRIVATE_KEY != '' }}
-      CLAWSWEEPER_APP_CLIENT_ID: Iv23liOECG0slfuhz093
+      CLAWSWEEPER_APP_CLIENT_ID: Iv23lihc7bsAuMEyRRC9
     steps:
       - name: Create ClawSweeper dispatch token
         id: token
